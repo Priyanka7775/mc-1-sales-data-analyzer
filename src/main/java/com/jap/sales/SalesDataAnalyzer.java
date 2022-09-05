@@ -60,17 +60,10 @@ public class SalesDataAnalyzer {
         List<SalesRecord>salesRecords=salesDataAnalyzer.readFile(fileName);
         System.out.println(salesRecords);
         System.out.println("--------------------------------------------------------------");
-        System.out.println("--------------------------------------------------------------");
-        System.out.println("--------------------------------------------------------------");
-
         System.out.println();
-
         System.out.println( salesDataAnalyzer.getAllCustomersSortedByPurchaseAmount(salesRecords,new AmountComparator()));
-
-        System.out.println();
-        System.out.println();
-        System.out.println();
         System.out.println("--------------------------------------------------------------");
+        System.out.println();
         System.out.println( salesDataAnalyzer.getTopCustomerWhoSpentMaxTimeOnSite(salesRecords,new TimeOnSiteComparator()));
 
     }
